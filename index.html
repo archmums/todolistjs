@@ -1,12 +1,94 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>to do</title>
   <link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
+  <main class="app">
+
+    <section class="greeting">
+      <h2 class="title">
+        Olá, <input type="text" name="" id="name" placeholder="seu nome">
+      </h2>
+    </section>
+
+    <section class="todo">
+      <h3>create a todo</h3>
+      <form id="new-todo-form">
+        <h4>O que ira fazer hoje?</h4>
+        <input type="text" nam="content" id="content" placeholder="e.g. entregar as tarefas">
+
+        <h4>Escolha uma categoria</h4>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="category" id="category1" value="business">
+            <span class="bubble business"></span>
+            <div>Business</div>
+          </label>
+
+          <label>
+            <input type="radio" name="category" id="category2" value="personal">
+            <span class="bubble personal"></span>
+            <div>Personal</div>
+          </label>
+        </div>
+
+        <input type="submit" value="add todo" />
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <h3>TODO list</h3>
+      <div class="list" id="todo-list">
+        <div class="todo-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble personal"></span>
+          </label>
+
+          <div class="todo-conten">
+            <input type="text" value="Caminhar no parque" readonly />
+          </div>
+
+          <div class="actions">
+            <button class="edit">Editar</button>
+            <button class="delete">Apagar</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="list" id="todo-list">
+        <div class="todo-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble business"></span>
+          </label>
+
+          <div class="todo-conten">
+            <input type="text" value="Fazer uma task de segurança" readonly />
+          </div>
+
+          <div class="actions">
+            <button class="edit">Editar</button>
+            <button class="delete">Apagar</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="main.js"></script>
 </body>
+
 </html>
