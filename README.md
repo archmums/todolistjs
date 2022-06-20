@@ -1,2 +1,2 @@
-# todolistjs
-to do list javascript vanila
+# To Do App 
+Simple To Do App JavaScript

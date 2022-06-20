@@ -1,5 +1,5 @@
 :root {
-  --primary: #EA40A4;
+  --primary: #42b883;
   --business: #3A82EE;
   --personal: var(--primary);
   --light: #EEE;
@@ -30,7 +30,12 @@ input:not([type="radio"]):not([type="checkbox"]), button{
 
 body {
   background: var(--light);
-  color: var(--dark)
+  color: var(--dark);
+  transition: background 0.2s linear;
+}
+
+body.dark {
+  background: #232c35;
 }
 
 section {
@@ -71,7 +76,7 @@ h4 {
   font-weight: 700;
 }
 
-.todo input[type="text"] {
+.create-todo input[type="text"] {
   display: block;
   width: 100%;
   font-size: 1.125rem;
@@ -83,14 +88,14 @@ h4 {
   margin-bottom: 1.5rem;
 }
 
-.todo .options {
+.create-todo .options {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.todo .options label {
+.create-todo .options label {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,13 +152,13 @@ input:checked ~ .bubble::after {
   opacity: 1;
 }
 
-.todo .options label div {
+.create-todo .options label div {
   color: var(--dark);
   font-size: 1.125rem;
   margin-top: 1rem;
 }
 
-.todo input[type="submit"] {
+.create-todo input[type="submit"] {
   display: block;
   width: 100%;
   font-size: 1.125rem;
@@ -166,7 +171,7 @@ input:checked ~ .bubble::after {
   transition: 0.2s ease-in-out;
 }
 
-.todo input[type="submit"]:hover {
+.create-todo input[type="submit"]:hover {
   opacity: 0.75;
 }
 
