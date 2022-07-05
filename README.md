@@ -1,2 +1,2 @@
-# To Do App 
-Simple To Do App JavaScript
+# ToDo List
+ToDo list Javascript vanilla 📝
